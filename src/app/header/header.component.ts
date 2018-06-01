@@ -1,10 +1,11 @@
 import { Component } from "@angular/core";
 
-@Component(){
+@Component({
     selector:'header-lmnt',
     templateUrl:'./header.component.html',
-    styleUrls:'./header.component.css';
-}
+    styleUrls:['./header.component.css']
+})
+
 export class HeaderComponent {
     
 }
