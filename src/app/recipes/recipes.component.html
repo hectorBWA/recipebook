@@ -1,13 +1,12 @@
 <div class="row">
   <div class="col-xs-6 col-md-5">
-    <recipe-list (recipeSelected)="displayRecipe($event)"></recipe-list>
-    <br>
-    
-  </div>
+    <recipe-list></recipe-list>
+</div>
   <div class="col-xs-6 col-md-7">
-    <recipe-detail *ngIf="selectedRecipe; else noRecipe" [recipe]="selectedRecipe" ></recipe-detail>
+    <recipe-detail *ngIf="selectedRecipe; else noRecipe" 
+      [recipe]="selectedRecipe" ></recipe-detail>
     <ng-template #noRecipe>
-    <p>Select a Recipe</p>
+      <p>Select a Recipe</p>
     </ng-template>
   </div>
 </div>
