@@ -23,4 +23,14 @@ export class ShoppingListService {
         this.ingredientChanged.emit(this.ingredients.slice());
       }
 
+      addIngredients(ingredients: Ingredient[]){
+        // VIABLE OPTION BUT CAUSES LOTS OF EVENTS BEING EMITTED
+        // for(let ingredient of ingredients){
+        //   this.addIngredient(ingredient);
+        // }
+
+        this.ingredients.push(...ingredients);
+        this.ingredientChanged.emit(this.ingredients.slice());
+      }
+
 }
