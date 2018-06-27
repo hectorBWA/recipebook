@@ -14,14 +14,14 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { ShoppingListService } from './shared/shopping-list.service';
 
-const appRoutes: Routes = [ // creates routes configuration // application will not use this without below import
-
+const appRoutes: Routes = [
+  
   {
-    path: 'recipe', // equivalent to localhost4200/servers
+    path: 'recipe', // localhost4200/recipe
     component: RecipesComponent
   },
   {
-    path: 'shopping', // equivalent to localhost4200/users
+    path: 'shopping', // localhost4200/shopping
     component: ShoppingListComponent
   }
 ];
